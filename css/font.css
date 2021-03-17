@@ -1,0 +1,17 @@
+@font-face { 
+font-family: "Binggrae-Bold";
+src:local(※), 
+url("./font/webfont/Binggrae-Bold.woff") format("woff"),
+url("./font/webfont/Binggrae-Bold.eot") format("embedded-opentype");
+    
+}
+
+@font-face { 
+font-family: "CJ-Bold";
+src:local(※), 
+url("./font/webfont/CJ+ONLYONE+Bold.woff") format("woff"),
+url("./font/webfont/CJ+ONLYONE+Bold.ttf") format("truetype"),
+url("./font/webfont/CJ+ONLYONE+Bold.eot") format("embedded-opentype")
+    ;
+    
+}
