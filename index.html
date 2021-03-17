@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,14 +23,15 @@
     <meta name="twitter:image" content="트위터이미지 넣기">
     <meta name="twitter:creator" content="@kim">
     <meta name="twitter:site" content="http://kbo831.github.io/web3">
-    <meta name="msapplication-TileColor" content="#FFFFFF"> 				
+    <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="윈도우 타일이미지. png 넣기">
     <!-- 보통사이즈32부터 2배수로  -->
     <link rel="shortcut icon" href="숏컷이미지넣기.ico" type="image/x-icon">
     <link rel="shortcut icon" href="숏컷이미지넣기.ico" type="image/x-icon">
     <!--1.폰트셋.css-->
-    <!-- 1. font-family: 'East Sea Dokdo', cursive; -->
+    <!--빙그레 웹폰트 파일안에 넣기:오류수정하기-->
     <link rel="stylesheet" href="./css/font.css">
+    <!-- 1. font-family: 'East Sea Dokdo', cursive; -->
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     <!-- 2.font-family: 'Noto Sans KR', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -39,9 +41,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <!--구글애널리틱스 소스코드-->
- <!--   <script async src="./js/google_analyics.js"></script>-->
-    <!--제이쿼리연결-->
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--   <script async src="./js/google_analyics.js"></script>-->
+    <script src="./js/jquery-3.6.0.js"></script>
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
     <![endif]-->
@@ -50,46 +51,139 @@
     <script src="js/respond.js"></script>
     <![endif]-->
     <style>
+
     </style>
+    <script>
+        $(document).ready(function() {
+            $("#top_btn").click(function() {
+                $("#top_ban").css("display", "none");
+            });
+        });
+    </script>
 </head>
+
 <body>
     <div class="wrap">
-        <input type="text" checkbox="" name="topc" id="top_ck">
         <div id="top_ban" class="clr">
-            <label for="top_ck">
-            닫기
-            </label>
+            <a href="" class="tnb_ban">
+                <table class="tb">
+                    <thead>
+                        <tr>
+                            <th colspan="16">경기도 코로나 19 확진자 현황<span class="red_txt">&nbsp;(총26,491명)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="hd_cel">수원</th>
+                            <th class="hd_cel">고양</th>
+                            <th class="hd_cel">용인</th>
+                            <th class="hd_cel">성남</th>
+                            <th class="hd_cel">부천</th>
+                            <th class="hd_cel">안산</th>
+                            <th class="hd_cel">화성</th>
+                            <th class="hd_cel">남양주</th>
+                            <th class="hd_cel">안양</th>
+                            <th class="hd_cel">평택</th>
+                            <th class="hd_cel">의정부</th>
+                            <th class="hd_cel">파주</th>
+                            <th class="hd_cel">시흥</th>
+                            <th class="hd_cel">김포</th>
+                            <th class="hd_cel">광명</th>
+                            <th class="hd_cel">광주</th>
+                        </tr>
+                        <tr>
+                            <td class="cel">1,538</td>
+                            <td class="cel">2,203</td>
+                            <td class="cel">1,807</td>
+                            <td class="cel">2,107</td>
+                            <td class="cel">1,890</td>
+                            <td class="cel">1,265</td>
+                            <td class="cel">806</td>
+                            <td class="cel">1,345</td>
+                            <td class="cel">1,159</td>
+                            <td class="cel">987</td>
+                            <td class="cel">1,009</td>
+                            <td class="cel">802</td>
+                            <td class="cel">711</td>
+                            <td class="cel">925</td>
+                            <td class="cel">668</td>
+                            <td class="cel">769</td>
+                        </tr>
+                        <tr>
+                            <th class="hd_cel">군포</th>
+                            <th class="hd_cel">이천</th>
+                            <th class="hd_cel">오산</th>
+                            <th class="hd_cel">하남</th>
+                            <th class="hd_cel">양주</th>
+                            <th class="hd_cel">구리</th>
+                            <th class="hd_cel">안성</th>
+                            <th class="hd_cel">포천</th>
+                            <th class="hd_cel">의왕</th>
+                            <th class="hd_cel">여주</th>
+                            <th class="hd_cel">양평</th>
+                            <th class="hd_cel">동두천</th>
+                            <th class="hd_cel">과천</th>
+                            <th class="hd_cel">가평</th>
+                            <th class="hd_cel">연천</th>
+                            <th class="hd_cel">해외</th>
+                        </tr>
+                        <tr>
+                            <td class="cel">644</td>
+                            <td class="cel">465</td>
+                            <td class="cel">301</td>
+                            <td class="cel">454</td>
+                            <td class="cel">439</td>
+                            <td class="cel">492</td>
+                            <td class="cel">263</td>
+                            <td class="cel">367</td>
+                            <td class="cel">211</td>
+                            <td class="cel">243</td>
+                            <td class="cel">253</td>
+                            <td class="cel">387</td>
+                            <td class="cel">111</td>
+                            <td class="cel">128</td>
+                            <td class="cel">163</td>
+                            <td class="cel">1,579</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <button id="top_btn">닫기</button>
         </div>
         <header class="hd clr">
-            <a href="index.html" class="logo">로고</a>
-            <nav class="tnb">
+            <nav class="tnb clr">
+               <a href="index.html" class="logo">로고</a>
                 <ul class="center">
-                    <li><a href="sub1">뉴스</a></li>
-                    <li><a href="sub2">민원</a></li>
-                    <li><a href="sub3">소통 〮참여</a></li>
-                    <li><a href="sub4">공유서비스</a></li>
-                    <li><a href="sub5">분야별정보</a></li>
-                    <li><a href="sub6">정보공개</a></li>
-                    <li><a href="sub7">경기도소개</a></li>
+                    <li><a href="sub1">뉴스&nbsp;·&nbsp;민원</a></li>
+                    <li><a href="sub2">소통&nbsp;·&nbsp;참여</a></li>
+                    <li><a href="sub3">공유서비스</a></li>
+                    <li><a href="sub4">분야별&nbsp;정보</a></li>
+                    <li><a href="sub5">정보공개</a></li>
+                    <li><a href="sub6">경기도&nbsp;소개</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="">조직도</a></li>
+                    <li><a href="https://air.gg.go.kr/">대기정보</a></li>
                 </ul>
             </nav>
-            <ul class="right">
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="">조직도</a></li>
-                <li><a href="https://air.gg.go.kr/">대기정보</a></li>
-            </ul> 
+            <div class="lang_box clr">
             <ul class="lang">
                 <li>
-                    <select name="" id="" class="lang">
-                        <option value="" selected>KO</option>
-                        <option value="" >ENG</option>
-                        <option value="">JP</option>
-                        <option value="">CH</option>
+                    <select name="" id="" class="sel">
+                        <option value="" selected>Korean</option>
+                        <option value="">English</option>
+                        <option value="">Japanese</option>
+                        <option value="">Chinese</option>
                     </select>
-                    <input type="button" id="" class="" value="go" >
+                   
                 </li>
-            </ul>  
-            <nav class="gnb">
+                <li>
+                     <input type="button" id="" class="lang_btn" value="go">
+                </li>
+            </ul>
+            </div>
+            <nav class="gnb clr">
                 <a href="index.html" class="slog">슬로건</a>
                 <form action="" class="sear_fr">
                     <input type="text" id="search" class="sc" name="">
@@ -97,15 +191,13 @@
                 </form>
                 <div class="weather">
                     <!-- 날씨적용법 찾아보기 -->
-                    <ul class="w_lst">
+                    <ul class="w_lst clr">
                         <li class="w_it1">
                             <a href="http://web.kma.go.kr/aboutkma/intro/metropolitan/index.jsp">
-                                <span class="com">날씨</span>
+                                <span class="com">8.4℃</span>
                             </a>
-                        </li>
-                        <li class="w_it2">
-                            <a href="https://air.gg.go.kr/">
-                                <span class="com">대기정보</span>
+                             <a href="https://air.gg.go.kr/">
+                                <span class="com">미세먼지(보통)&nbsp;초미세먼지(보통)</span>
                             </a>
                         </li>
                     </ul>
@@ -114,74 +206,323 @@
         </header>
         <div class="content clr">
             <div class="pg pg1">
-                <div class="left">
-                    <div class="ban_box">
-                        <ul class="ban_tap">
-                            <li>
-                                <span class="img"></span><label for="radio1">주요뉴스</label>
+                <div class="pg_wrap">
+                    <div class="left">
+                        <div class="ban_box">
+                            <ul class="ban_tap">
+                                <li>
+                                    <span class="img"></span>
+                                    <label for="radio1">주요뉴스</label>
+                                </li>
+                                <li>
+                                    <span class="img"></span>
+                                    <label for="radio2">시민참여</label>
+                                </li>
+                            </ul>
+                            <div class="ban1">
+                                <input type="radio" name="radio" class="radio" id="radio1">
+                                <figure class="vs_box">
+                                    <ul class="vs">
+                                        <li class="vs_lst1"><a href="">뉴스1</a></li>
+                                        <li class="vs_lst2"><a href="">뉴스2</a></li>
+                                        <li class="vs_lst3"><a href="">뉴스3</a></li>
+                                        <li class="vs_lst4"><a href="">뉴스4</a></li>
+                                        <li class="vs_lst5"><a href="">뉴스5</a></li>
+                                        <li class="vs_lst6"><a href="">뉴스6</a></li>
+                                        <li class="vs_lst7"><a href="">뉴스7</a></li>
+                                    </ul>
+                                    <ul class="btn_box">
+                                        <li class="btn1">버튼1</li>
+                                        <li class="btn2">버튼2</li>
+                                        <li class="btn3">버튼3</li>
+                                    </ul>
+                                </figure>
+                            </div>
+                            <div class="ban">
+                                <input type="radio" name="radio" class="radio" id="radio2">
+                                <figure class="vs_box2">
+                                    <ul class="vs">
+                                        <li class="vs_lst1"><a href="">참여1</a></li>
+                                        <li class="vs_lst2"><a href="">참여2</a></li>
+                                        <li class="vs_lst3"><a href="">참여3</a></li>
+                                        <li class="vs_lst4"><a href="">참여4</a></li>
+                                        <li class="vs_lst5"><a href="">참여5</a></li>
+                                        <li class="vs_lst6"><a href="">참여6</a></li>
+                                        <li class="vs_lst7"><a href="">참여7</a></li>
+                                    </ul>
+                                    <ul class="btn_box">
+                                        <li class="btn1">버튼1</li>
+                                        <li class="btn2">버튼2</li>
+                                        <li class="btn3">버튼3</li>
+                                    </ul>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="corona">
+                            <li class="bg">
+                                <a href="" class="c_btn">버튼</a>
                             </li>
-                            <li>
-                                <span class="img"><label for="radio2">시민참여</label>
+                            <li class="bg">
+                                <a href="" class="c_btn">버튼</a>
                             </li>
                         </ul>
-                        <div class="ban1">
-                            <input type="radio" name="radio" class="radio" id="radio1">
-                            <figure class="vs_box">
-                                <ul class="vs">
-                                    <li class="vs_lst1"><a href="">뉴스1</a></li>
-                                    <li class="vs_lst2"><a href="">뉴스2</a></li>
-                                    <li class="vs_lst3"><a href="">뉴스3</a></li>
-                                    <li class="vs_lst4"><a href="">뉴스4</a></li>
-                                    <li class="vs_lst5"><a href="">뉴스5</a></li>
-                                    <li class="vs_lst6"><a href="">뉴스6</a></li>
-                                    <li class="vs_lst7"><a href="">뉴스7</a></li>
-                                </ul>
-                                <ul class="btn_box">
-                                    <li class="btn1">버튼1</li>
-                                    <li class="btn2">버튼2</li>
-                                    <li class="btn3">버튼3</li>
-                                </ul>
-                            </figure>
-                        </div>
-                        <div class="ban">
-                            <input type="radio" name="radio" class="radio" id="radio2">
-                            <figure class="vs_box2">
-                                <ul class="vs">
-                                    <li class="vs_lst1"><a href="">참여1</a></li>
-                                    <li class="vs_lst2"><a href="">참여2</a></li>
-                                    <li class="vs_lst3"><a href="">참여3</a></li>
-                                    <li class="vs_lst4"><a href="">참여4</a></li>
-                                    <li class="vs_lst5"><a href="">참여5</a></li>
-                                    <li class="vs_lst6"><a href="">참여6</a></li>
-                                    <li class="vs_lst7"><a href="">참여7</a></li>
-                                </ul>
-                                <ul class="btn_box">
-                                    <li class="btn1">버튼1</li>
-                                    <li class="btn2">버튼2</li>
-                                    <li class="btn3">버튼3</li>
-                                </ul>
-                            </figure>
-                        </div>    
                     </div>
                 </div>
-                <div class="right">
-                    <ul class="corona">
-                        <li class="bg">
-                            <a href="" class="c_btn">버튼</a>
+            </div>
+            <div class="pg pg2">
+                <div class="pg_wrap">
+                    <ul class="tit_lst">
+                        <li>
+                            <p class="tit"></p>
                         </li>
-                        <li class="bg">
-                            <a href="" class="c_btn">버튼</a>
+                        <li>
+                            <a href="" class="all_site"></a>
                         </li>
                     </ul>
-                </div>    
+                </div>
+                <ul class="ico_lst1">
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                    <li><a href=""><span class="pic"></span><span class="itxt"></span></a></li>
+                </ul>
             </div>
+            <div class="pg pg3">
+                <ul class="full">
+                    <li>
+                        <a href="">
+                            <span class="copi"></span>
+                            <div class="s_txt">
+                                <p class="s_txt"></p>
+                                <p class="b_txt"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="copi"></span>
+                            <div class="s_txt">
+                                <p class="s_txt"></p>
+                                <p class="b_txt"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="copi"></span>
+                            <div class="s_txt">
+                                <p class="s_txt"></p>
+                                <p class="b_txt"></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
 
-            
+                <div class="pg_wrap">
+                    <section class="tb_box tb_box1">
+                        <h2 class="tit">새소식</h2>
+                        <table class="tb">
+                            <!-- 새소힉 -->
+                        </table>
+                    </section>
+                    <section class="tb_box tb_box2">
+                        <div class="t_hd">
+                            <h2 class="tit">공지사항</h2>
+                            <a href="" class="more">
+                            </a>
+                        </div>
+                        <table class="tb">
+                            공지
+                        </table>
+                    </section>
+                    <section class="qi_box">
+                        <div class="t_hd">
+                            <h2 class="tit">공지사항</h2>
+                            <a href="" class="more"></a>
+                        </div>
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="pg pg4">
+                <div class="pg_wrap">
+                    <div class="part_box">
+                        <h2 class="tit">분야별정보</h2>
+                        <ul class="part_lst">
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                            <li><a href=""><span class="img"></span><span class="txt"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="new_box">
+                        <h2 class="tit"></h2>
+                        <ul class="n_lst">
+                            <li class="it1">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it2">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it3">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it4">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it5">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it6">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it7">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                            <li class="it8">
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="com"></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="da_box">
+                        <section class="vd">
+                            <a href="">
+                                <img src="" alt="">
+                                <p class="com"></p>
+                            </a>
+                        </section>
+
+                        <section class="n_table">
+                            <!-- 테이블 태그기입 -->
+                        </section>
+                        <section class="sns">
+                            <h2 class="tit">경기도SNS</h2>
+                            <div class="sns">
+                                <ul class="s_lst">
+                                    <li><a href="">insta</a></li>
+                                    <li><a href="">face</a></li>
+                                    <li><a href="">twitt</a></li>
+                                    <li><a href="">blog</a></li>
+                                    <li><a href="">ytb</a></li>
+                                    <li><a href="">kaka</a></li>
+                                </ul>
+                                <ul class="sns_ft">
+                                    <li class="s_heat"></li>
+                                    <li class="s_slog"></li>
+                                </ul>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="ft_bn_box">
+                        <ul class="ft_bn">
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                        <ul class="ft_btn">
+                            <li><button>이전</button></li>
+                            <li><button>정지</button></li>
+                            <li><button>다음</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="ft clr">
-            
-        </footer>
 
-    </div>    
+    </div>
+    <footer class="ft clr">
+        <div class="pg_wrap">
+            <nav class="fnb">
+                <ul class="fnb_lst">
+                    <li class="f_lt"><a href="">홈페이지 도우미</a></li>
+                    <li class="f_lt"><a href="">개인정보처리방침</a></li>
+                    <li class="f_lt"><a href="">저작권 정책</a></li>
+                    <li class="f_lt"><a href="">영상정보처리기기 운영 관리방침</a></li>
+                    <li class="f_lt"><a href="">홈페이지 바로잡기</a></li>
+                    <li class="f_lt"><a href="">사이트맵</a></li>
+                </ul>
+            </nav>
+            <section class="tel">
+                <h2 class="tit"></h2>
+                <p class="com"></p>
+            </section>
+            <div class="center">
+                <p class="add"></p>
+                <p class="copy"></p>
+            </div>
+            <ul class="mark">
+                <li class="it1"><a href="">wa</a></li>
+                <li class="it2"><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
 </body>
+
 </html>
