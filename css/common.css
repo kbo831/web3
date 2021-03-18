@@ -122,7 +122,7 @@ ul.ban_tap li button { display: block; width: 100%;  text-align: center; backgro
 
 .pg1 .pg_wrap .right { width: 440px; float:  left; }
 .pg1 .pg_wrap .corona { width: 100%; margin-left: 50px }
-.pg1 .pg_wrap .corona li a { display: block; width: 100%; background-image: url("./")}
+.pg1 .pg_wrap .corona li a { display: block; width: 100%; background-image: url("../corona/")}
 .pg1 .pg_wrap .corona li:first-child { height:208px; background-color: #d0e8f4; }
 
 .pg1 .pg_wrap .corona li:last-child  { height:142px; background-color: #d0e8f4; }
