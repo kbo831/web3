@@ -14,7 +14,7 @@ a { text-decoration: none; }
 /*상단배너*/
 
 #top_ban { width: 100vw; height:180px; position:relative; background-image: url("../banner/ban_banner/tnb.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; border-bottom:2px solid #fff;}
-#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  position:absolute; top:32px; left:423px;  position:relative; }
+#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  top:32px; left:423px;  position:relative; }
 
 /*tnb table 부분*/
 
