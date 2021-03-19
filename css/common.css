@@ -18,7 +18,7 @@ a { text-decoration: none; }
 
 /*tnb table 부분*/
 
-#top_ban table.tb { width:1070px; border-top:2px solid #fff; position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 0px; }
+#top_ban table.tb { width:1070px; border-top:2px solid #fff; position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 2px; }
 #top_ban table.tb tr { display: table-row; }
 #top_ban table.tb th,#top_ban table.tb td { display: ta ble-cell; width:66px; height: 25px; line-height: 25px; text-align: center; font-weight:600;  }
 
