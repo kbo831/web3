@@ -14,11 +14,11 @@ a { text-decoration: none; }
 /*상단배너*/
 
 #top_ban { width: 100vw; height:180px; position:relative; background-image: url("../banner/ban_banner/tnb.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; border-bottom:2px solid #fff;}
-#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  position:absolute; top:32px; left:423px;  }
+#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  position:absolute; top:32px; left:423px;  position:relative; }
 
 /*tnb table 부분*/
 
-#top_ban table.tb { width:1184px; border-top:2px solid #fff;  position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 53px}
+#top_ban table.tb { width:1070px; border-top:2px solid #fff; position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 0px; }
 #top_ban table.tb tr { display: table-row; }
 #top_ban table.tb th,#top_ban table.tb td { display: ta ble-cell; width:66px; height: 25px; line-height: 25px; text-align: center; font-weight:600;  }
 
