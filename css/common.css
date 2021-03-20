@@ -14,11 +14,11 @@ a { text-decoration: none; }
 /*상단배너*/
 
 #top_ban { width: 100vw; height:180px; position:relative; background-image: url("../banner/ban_banner/tnb.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; border-bottom:2px solid #fff;}
-#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  top:32px; left:423px;  position:relative; }
+#top_ban a.tnb_ban { display: block; width:1070px ; height: 100%;  position:relative; top:32px; left:423px;  }
 
 /*tnb table 부분*/
 
-#top_ban table.tb { width:1070px; border-top:2px solid #fff; position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 2px; }
+#top_ban table.tb { width:1070px; border-top:2px solid #fff;  position:absolute; display: table; border-collapse: collapse; border-radius: 30px; left: 2px}
 #top_ban table.tb tr { display: table-row; }
 #top_ban table.tb th,#top_ban table.tb td { display: ta ble-cell; width:66px; height: 25px; line-height: 25px; text-align: center; font-weight:600;  }
 
@@ -121,8 +121,61 @@ ul.ban_tap li button { display: block; width: 100%;  text-align: center; backgro
 /*코로나 배너 오른쪽*/
 
 .pg1 .pg_wrap .right { width: 440px; float:  left; }
-.pg1 .pg_wrap .corona { width: 100%; margin-left: 50px }
-.pg1 .pg_wrap .corona li a { display: block; width: 100%; background-image: url("../corona/")}
-.pg1 .pg_wrap .corona li:first-child { height:208px; background-color: #d0e8f4; }
+.pg1 .pg_wrap .corona { width: 100%; margin-left: 50px; clear:both;   }
+.pg1 .pg_wrap .corona li.bg { height:208px; height:350px; background-color:#fbd884;}
+.pg1 .pg_wrap .corona li.bg .co_box a { display: block; width: 200px; height: 40px; background-color: rgba(0,0,0,0.7); color: #fff; line-height: 40px; text-align: center; border-radius: 3px; margin: 0 auto;} 
+.pg1 .pg_wrap .corona li.bg > h2 { width: 90%; margin: 0 auto; line-height: 3.0; height:71.11px; }
+.pg1 .pg_wrap .corona li.bg  .s_txt { font-size: 15px; }
+.pg1 .pg_wrap .corona .co_box { width: 100%; height: calc( 360px - 71.11px); }
+.pg1 .pg_wrap .corona .co_box ul { width: 95%; height: 40%; margin: 0 auto; }
+.pg1 .pg_wrap .corona .co_box ul li {  float: left; text-align: center; border-radius: 10px; margin-left: 1%}
 
-.pg1 .pg_wrap .corona li:last-child  { height:142px; background-color: #d0e8f4; }
+
+.pg1 .pg_wrap .corona .co_box ul.co_01 li.tc1{ background-color: #d79701; width: 49%;}
+.pg1 .pg_wrap .corona .co_box ul.co_01 li.tc2 { background-color: #fec02f; width: 49%;}
+
+.pg1 .pg_wrap .corona .co_box ul.co_02 li.tc1 { background-color: #ffcc33; width: 55%;}
+.pg1 .pg_wrap .corona .co_box ul.co_02 li.tc2 { background-color: #ffcc66;width: 43%;}
+
+
+.pg1 .pg_wrap .corona .co_box ul li span { display: block; color:#fff; font-weight: 600;  font-size: 20px; line-height: 3.0; }
+.pg1 .pg_wrap .corona .co_box ul.co_01 li span.bt { position: relative;  }
+.pg1 .pg_wrap .corona .co_box ul.co_02 li span.bt { position: relative;  }
+
+.pg1 .pg_wrap .corona .co_box ul.co_01 li  span.bt:after { content: ""; display: block;  width: 180px; height: 2px; position:absolute; background-color: #fff; top: 54px; left:15px; z-index: 88; }
+.pg1 .pg_wrap .corona .co_box ul.co_02 li.tc1 span.bt:after { content: ""; display: block;  width: 200px; height: 2px; position:absolute; background-color: #fff; top: 54px; left:15px; z-index: 88; }
+.pg1 .pg_wrap .corona .co_box ul.co_02 li.tc2 span.bt:after { content: ""; display: block;  width: 150px; height: 2px; position:absolute; background-color: #fff; top: 54px; left:15px; z-index: 88; }
+
+.pg1 .pg_wrap .corona .co_box ul li span.com { font-size: 19px; height: 46px; line-height: 46px; }
+
+/*pg2 부분 */
+.pg2 .pg_wrap .tit_lst { width: 100%; height: 43px; padding-top: 70px ;border-bottom: 2px solid #ececec; padding-bottom: 20px}
+.pg2 .pg_wrap .tit_lst li { width: 50%; float: left; line-height: 43px; }
+.pg2 .pg_wrap .tit_lst li p.tit {  font-size: 30px; font-weight: 600; }
+.pg2 .pg_wrap .tit_lst li a.all_site { display: block; float: right; width: 130px; border:1px solid #ececec;  position:relative; box-sizing: border-box; padding-left: 20px}
+.pg2 .pg_wrap .tit_lst li a.all_site:after { content:""; display: block; width: 6px; height: 11px; background-image: url("../main_ico/main/pg2_all_site.png"); position: absolute; right: 18px; top: 17px;}
+
+.pg2 .pg_wrap .ico_lst1 { width: 100%; }
+.pg2 .pg_wrap .ico_lst1 li { width: 100px; margin-right:13px ; float:left; height:102px;  padding-bottom: 50px; padding: 30px 0; }
+
+
+.pg2 .pg_wrap .ico_lst1 li a { display: block; width: 100px; height: 110px; border: 1px solid transparent; border-radius:30px; margin: 0 auto; }
+.pg2 .pg_wrap .ico_lst1 li a:hover { background-color: #0051a3; border:2px solid #fff;   }
+
+.pg2 .pg_wrap .ico_lst1 li a:hover span.itxt { color: #fff ;  }
+
+.pg2 .pg_wrap .ico_lst1 li a  span:first-child { display: block; width: 55px; height: 53px; background-position: center center; background-size: contain; background-repeat: no-repeat;  text-indent: -9999px; margin: 10px auto; }
+
+.pg2 .pg_wrap .ico_lst1 li a  span:last-child { display: block; width: 100px; height: 30px; margin: 0 auto;  text-align: center ; color:#000; font-size: 15px}
+
+.pg2 .pg_wrap .ico_lst1 li span.pic1 { background-image: url("../main_ico/page01_ico/01.minwon.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic2 { background-image: url("../main_ico/page01_ico/02.group.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic3 { background-image: url("../main_ico/page01_ico/03.survey.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic4 { background-image: url("../main_ico/page01_ico/news_s.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic5 { background-image: url("../main_ico/page01_ico/07.labor_1.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic6 { background-image: url("../main_ico/page01_ico/traffic.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic7 { background-image: url("../main_ico/page01_ico/map.png"); }
+.pg2 .pg_wrap .ico_lst1 li span.pic8 { background-image: url("../main_ico/page01_ico/10.test.png");  }
+.pg2 .pg_wrap .ico_lst1 li span.pic9 { background-image: url("../main_ico/page01_ico/11.jop.png");   }
+.pg2 .pg_wrap .ico_lst1 li span.pic10 { background-image: url("../main_ico/page01_ico/09.library.png"); }
+.pg2 .pg_wrap .ico_lst1 li span.pic11 { background-image: url("../main_ico/page01_ico/05.data.png");  }
