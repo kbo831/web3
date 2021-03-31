@@ -224,7 +224,7 @@
                             <ul class="ban_con">
                                 <li class="ban clr on">
                                     <figure class="vs_box">
-                                        <ul class="vs">
+                                        <ul class="vs vs01">
                                             <li class="vs_lst1"><a href="">
                                                     <p class="com">동절기 한파특보 발령 시 이렇게 하세요!</p>
                                                 </a>
@@ -261,16 +261,62 @@
 
                                             </li>
                                         </ul>
-                                        <ul class="btn_box">
-                                            <li class="btn1">버튼1</li>
-                                            <li class="btn2">버튼2</li>
-                                            <li class="btn3">버튼3</li>
+                                        <ul class="btn_box btn01">
+                                            <li class="next" data_f="nt">다음</li>
+                                            <li class="play" data_f="sto">멈춰</li>
+                                            <li class="prev" data_f="pv">이전</li>
                                         </ul>
                                     </figure>
+                                    <script>
+                                    $(document).ready(function(){
+                                       var wd = $(".vs01 > li").width();
+                                        var cn = $(".vs01 > li").length;
+                                    
+                                       
+                                        function nt(){
+                                                $(".vs01").not(":animated").animate({"margin-left":-wd},1000,function(){
+                                                $(".vs01 > li").eq(0).appendTo($(".vs01"));
+                                                $(".vs01").css("margin-left","0px");
+                                            });
+                                        }
+                                        var it = setInterval(function(){ nt(); },4000);
+                                        
+                                        function pv(){
+                                            $(".vs01").css("margin-left",-wd);
+                                            $(".vs01 li").eq(cn-1).prependTo($(".vs01"));
+                                            $(".vs01").not(":animated").animate({"margin-left":"0px"},1000);
+                                        }
+                                        
+                                        
+                                        $(".btn01 li").click(function(){
+                                            var data_f = $(this).attr("data_f");
+                                            
+                                            if( data_f == "nt"){
+                                                clearInterval(it);
+                                                nt();
+                                                setInterval(function(){ nt(); },4000);
+                                            }else if( data_f =="pv"){
+                                                clearInterval(it);
+                                                pv();
+                                                setInterval(function(){ nt(); },4000);
+                                                
+                                            }else if( data_f == "sto"){
+                                                 $(".vs01").stop();
+                                            }
+                                            
+                                            
+                                        });
+                                        
+                                        
+                                        
+                                        
+                                    });
+                                    
+                                    </script>
                                 </li>
                                 <li class="ban clr">
                                     <figure class="vs_box">
-                                        <ul class="vs">
+                                        <ul class="vs vs02">
                                             <li class="vs_lst01"><a href="">참여1</a></li>
                                             <li class="vs_lst02"><a href="">참여2</a></li>
                                             <li class="vs_lst03"><a href="">참여3</a></li>
@@ -279,14 +325,60 @@
                                             <li class="vs_lst06"><a href="">참여6</a></li>
                                             <li class="vs_lst07"><a href="">참여7</a></li>
                                         </ul>
-                                        <ul class="btn_box">
-                                            <li class="next">다음</li>
-                                            <li class="play">멈춰</li>
-                                            <li class="prev">이전</li>
+                                        <ul class="btn_box btn02">
+                                            <li class="next" data_e="ntx">다음</li>
+                                            <li class="play" data_e="stp">멈춰</li>
+                                            <li class="prev" data_e="pve">이전</li>
                                         </ul>
                                     </figure>
                                 </li>
                             </ul>
+                                   <script>
+                                    $(document).ready(function(){
+                                       var wdt = $(".vs02 > li").width();
+                                        var cnt = $(".vs02 > li").length;
+                                    
+                                       
+                                        function ntx(){
+                                                $(".vs02").not(":animated").animate({"margin-left":-wdt},1000,function(){
+                                                $(".vs02 > li").eq(0).appendTo($(".vs02"));
+                                                $(".vs02").css("margin-left","0px");
+                                            });
+                                        }
+                                        var itvl = setInterval(function(){ ntx(); },4000);
+                                        
+                                        function pve(){
+                                            $(".vs02").css("margin-left",-wdt);
+                                            $(".vs02 li").eq(cnt-1).prependTo($(".vs02"));
+                                            $(".vs02").not(":animated").animate({"margin-left":"0px"},1000);
+                                        }
+                                        
+                                        
+                                        $(".btn02 li").click(function(){
+                                            var data_e = $(this).attr("data_e");
+                                            
+                                            if( data_e == "ntx"){
+                                                clearInterval(itvl);
+                                                ntx();
+                                                setInterval(function(){ nt(); },4000);
+                                            }else if( data_e =="pve"){
+                                                clearInterval(itvl);
+                                                pve();
+                                                setInterval(function(){ nt(); },4000);
+                                                
+                                            }else if( data_e == "stp"){
+                                                 $(".vs02").stop();
+                                            }
+                                            
+                                            
+                                        });
+                                        
+                                        
+                                        
+                                        
+                                    });
+                                    
+                                    </script>
                         </div>
                          <script>
                         //탭 설정하기 1.버튼을 클리한다. 2. ban_box가 li클릭시 각각 나타나야한다.
