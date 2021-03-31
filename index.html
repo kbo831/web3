@@ -212,7 +212,7 @@
                     <div class="left">
                         <div class="ban_box">
                             <ul class="ban_tap">
-                                <li>
+                                <li class="on">
                                     <span class="img">소식</span>
                                     <button class="news">주요뉴스</button>
                                 </li>
@@ -221,78 +221,81 @@
                                     <button class="joins">시민참여</button>
                                 </li>
                             </ul>
-                            <div class="ban clr">
-                                <figure class="vs_box">
-                                    <ul class="vs">
-                                        <li class="vs_lst1"><a href="">
-                                                <p class="com">동절기 한파특보 발령 시 이렇게 하세요!</p>
-                                            </a>
+                            <ul class="ban_con">
+                                <li class="ban clr on">
+                                    <figure class="vs_box">
+                                        <ul class="vs">
+                                            <li class="vs_lst1"><a href="">
+                                                    <p class="com">동절기 한파특보 발령 시 이렇게 하세요!</p>
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst2"><a href="">
-                                                <p class="com">달라지는 경기도 10대 주요 정책</p>
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst2"><a href="">
+                                                    <p class="com">달라지는 경기도 10대 주요 정책</p>
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst3"><a href="">
-                                                <p class="com">마스크 착용 의무화</p>3
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst3"><a href="">
+                                                    <p class="com">마스크 착용 의무화</p>3
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst4"><a href="">
-                                                <p class="com">경기도 학자금 대출이자 지원금 신청하세요 </p>
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst4"><a href="">
+                                                    <p class="com">경기도 학자금 대출이자 지원금 신청하세요 </p>
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst5"><a href="">
-                                                <p class="com">경기도 교통공사 채용공고</p>
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst5"><a href="">
+                                                    <p class="com">경기도 교통공사 채용공고</p>
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst6"><a href="">
-                                                <p class="com">경기도 긴급의료 지원인력 모집</p>
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst6"><a href="">
+                                                    <p class="com">경기도 긴급의료 지원인력 모집</p>
+                                                </a>
 
-                                        </li>
-                                        <li class="vs_lst7"><a href="">
-                                                <p class="com">배달특급 10% 선할인 5%쿠폰까지</p>
-                                            </a>
+                                            </li>
+                                            <li class="vs_lst7"><a href="">
+                                                    <p class="com">배달특급 10% 선할인 5%쿠폰까지</p>
+                                                </a>
 
-                                        </li>
-                                    </ul>
-                                    <ul class="btn_box">
-                                        <li class="btn1">버튼1</li>
-                                        <li class="btn2">버튼2</li>
-                                        <li class="btn3">버튼3</li>
-                                    </ul>
-                                </figure>
-                            </div>
-                            <div class="ban clr">
-                                <figure class="vs_box">
-                                    <ul class="vs">
-                                        <li class="vs_lst01"><a href="">참여1</a></li>
-                                        <li class="vs_lst02"><a href="">참여2</a></li>
-                                        <li class="vs_lst03"><a href="">참여3</a></li>
-                                        <li class="vs_lst04"><a href="">참여4</a></li>
-                                        <li class="vs_lst05"><a href="">참여5</a></li>
-                                        <li class="vs_lst06"><a href="">참여6</a></li>
-                                        <li class="vs_lst07"><a href="">참여7</a></li>
-                                    </ul>
-                                    <ul class="btn_box">
-                                        <li class="next">다음</li>
-                                        <li class="play">멈춰</li>
-                                        <li class="prev">이전</li>
-                                    </ul>
-                                </figure>
-                            </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="btn_box">
+                                            <li class="btn1">버튼1</li>
+                                            <li class="btn2">버튼2</li>
+                                            <li class="btn3">버튼3</li>
+                                        </ul>
+                                    </figure>
+                                </li>
+                                <li class="ban clr">
+                                    <figure class="vs_box">
+                                        <ul class="vs">
+                                            <li class="vs_lst01"><a href="">참여1</a></li>
+                                            <li class="vs_lst02"><a href="">참여2</a></li>
+                                            <li class="vs_lst03"><a href="">참여3</a></li>
+                                            <li class="vs_lst04"><a href="">참여4</a></li>
+                                            <li class="vs_lst05"><a href="">참여5</a></li>
+                                            <li class="vs_lst06"><a href="">참여6</a></li>
+                                            <li class="vs_lst07"><a href="">참여7</a></li>
+                                        </ul>
+                                        <ul class="btn_box">
+                                            <li class="next">다음</li>
+                                            <li class="play">멈춰</li>
+                                            <li class="prev">이전</li>
+                                        </ul>
+                                    </figure>
+                                </li>
+                            </ul>
                         </div>
                          <script>
                         //탭 설정하기 1.버튼을 클리한다. 2. ban_box가 li클릭시 각각 나타나야한다.
                         $(".ban_tap li").click(function(){
-                            
-                                
-                                
-                            
+                            var idx = $(this).index();
+                            $(this).addClass("on");
+                            $(this).siblings().removeClass("on");
+                            $(".ban_con li.ban").eq(idx).addClass("on");
+                            $(".ban_con li.ban").eq(idx).siblings().removeClass("on");
                         });
                         </script>
                     </div>

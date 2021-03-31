@@ -22,8 +22,8 @@ ul.ban_tap li button { display: block; width: 100%;  text-align: center; backgro
 
 /*슬라이드 배너*/
 .ban_box { position:relative; }
-.ban_box div.ban { width: 690px; height:350px; float: left; position:absolute; top: 0; left: 80px;  }
-
+.ban_box li.ban { width: 690px; height:350px; float: left; position:absolute; top: 0; left: 80px;  display:none }
+.ban_box li.ban.on { display:block; }
 .ban_box .vs_box { width:690px; height:350px; overflow: hidden; } 
 .ban_box  .vs_box .vs { width: 4830px; height: 350px; }
 .ban_box .vs_box .vs li { width: 690px; height: 350px;  background-repeat:no-repeat; float:left; text-indent: -99999px; background-size:100% 100%; background-position: center center; position: relative; }
