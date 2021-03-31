@@ -42,8 +42,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <!--구글애널리틱스 소스코드-->
     <!--   <script async src="./js/google_analyics.js"></script>-->
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="./js/jquery.js"></script>
+ 
 
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -212,11 +212,11 @@
                     <div class="left">
                         <div class="ban_box">
                             <ul class="ban_tap">
-                                <li class="clr">
+                                <li>
                                     <span class="img">소식</span>
                                     <button class="news">주요뉴스</button>
                                 </li>
-                                <li class="on">
+                                <li>
                                     <span class="img">참여</span>
                                     <button class="joins">시민참여</button>
                                 </li>
@@ -286,6 +286,12 @@
                                 </figure>
                             </div>
                         </div>
+                         <script>
+                        //탭 설정하기 1.버튼을 클리한다. 2. ban_box가 li클릭시 각각 나타나야한다.
+                        $(".ban_tap li").
+                             
+                        
+                        </script>
                     </div>
                     <div class="right">
                         <ul class="corona clr">
@@ -620,23 +626,63 @@
                 <div class="bn_box clr">
                     <div class="bn_vs">
                         <ul class="bn_lst clr">
-                            <li class="it1"><a href=""></a></li>
-                            <li class="it2"><a href=""></a></li>
-                            <li class="it3"><a href=""></a></li>
-                            <li class="it4"><a href=""></a></li>
-                            <li class="it5"><a href=""></a></li>
-                            <li class="it6"><a href=""></a></li>
-                            <li class="it7"><a href=""></a></li>
-                            <li class="it8"><a href=""></a></li>
-                            <li class="it9"><a href=""></a></li>
-                            <li class="it10"><a href=""></a></li>
+                            <li class="it1"><a href="">1</a></li>
+                            <li class="it2"><a href="">2</a></li>
+                            <li class="it3"><a href="">3</a></li>
+                            <li class="it4"><a href="">4</a></li>
+                            <li class="it5"><a href="">5</a></li>
+                            <li class="it6"><a href="">6</a></li>
+                            <li class="it7"><a href="">7</a></li>
+                            <li class="it8"><a href="">8</a></li>
+                            <li class="it9"><a href="">9</a></li>
+                            <li class="it10"><a href="">10</a></li>
                         </ul>
                     </div>
                     <ul class="ft_btn clr">
-                        <li><button>이전</button></li>
-                        <li><button>정지</button></li>
-                        <li><button>다음</button></li>
+                        <li><button data_type ="pr">이전</button></li>
+                        <li><button data_type ="st">정지</button></li>
+                        <li><button data_type ="nx">다음</button></li>
                     </ul>
+                    <script>
+                    $(document).ready(function(){
+                        var wd = $(".bn_lst li").width();
+                        
+                        function pr(){
+                            $(".bn_lst").not(":animated").animate({"margin-left":-wd},800,function(){
+                                $(".bn_lst li").eq(0).appendTo($(".bn_lst"));
+                                $(".bn_lst").css("margin-left","0px");
+                            });
+                        }
+                        var itv = setInterval(function(){pr();},5000);
+                        
+                        function nx(){
+                            $(".bn_lst").css("margin-left",-wd);
+                            $(".bn_lst li").eq(9).prependTo($(".bn_lst"));
+                            $(".bn_lst").not(":animated").animate({"margin-left":"0px"});  
+                        }
+                       
+                        $(".ft_btn li button").click(function(){
+                           //1.사용자데이터 속성값 가져오기 
+                            var dtt = $(this).attr("data_type"); // this라고 해줘야 멈추기 됨
+                           
+                           if ( dtt == "pr"){
+                               clearInterval(itv);
+                               pr();
+                               setInterval(function(){pr();},5000);
+                               
+                           }else if ( dtt == "nx"){
+                               clearInterval(itv);
+                               nx();
+                               setInterval(function(){pr();},5000);
+                           }else if( dtt == "st"){
+                               clearInterval(itv);
+                               $(".bn_lst").stop();   
+                           }
+                              
+                        });
+                        
+                    });
+                    </script>
                 </div>
                 <nav class="fnb clr">
                     <ul class="fnb_lst clr">
