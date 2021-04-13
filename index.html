@@ -41,9 +41,20 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <!--구글애널리틱스 소스코드-->
-    <!--   <script async src="./js/google_analyics.js"></script>-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYHW3BJNLM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYHW3BJNLM');
+    </script>
     <script src="./js/jquery.js"></script>
- 
+
 
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -268,50 +279,59 @@
                                         </ul>
                                     </figure>
                                     <script>
-                                    $(document).ready(function(){
-                                       var wd = $(".vs01 > li").width();
-                                        var cn = $(".vs01 > li").length;
-                                    
-                                       
-                                        function nt(){
-                                                $(".vs01").not(":animated").animate({"margin-left":-wd},1000,function(){
-                                                $(".vs01 > li").eq(0).appendTo($(".vs01"));
-                                                $(".vs01").css("margin-left","0px");
-                                            });
-                                        }
-                                        var it = setInterval(function(){ nt(); },4000);
-                                        
-                                        function pv(){
-                                            $(".vs01").css("margin-left",-wd);
-                                            $(".vs01 li").eq(cn-1).prependTo($(".vs01"));
-                                            $(".vs01").not(":animated").animate({"margin-left":"0px"},1000);
-                                        }
-                                        
-                                        
-                                        $(".btn01 li").click(function(){
-                                            var data_f = $(this).attr("data_f");
-                                            
-                                            if( data_f == "nt"){
-                                                clearInterval(it);
-                                                nt();
-                                                setInterval(function(){ nt(); },4000);
-                                            }else if( data_f =="pv"){
-                                                clearInterval(it);
-                                                pv();
-                                                setInterval(function(){ nt(); },4000);
-                                                
-                                            }else if( data_f == "sto"){
-                                                 $(".vs01").stop();
+                                        $(document).ready(function() {
+                                            var wd = $(".vs01 > li").width();
+                                            var cn = $(".vs01 > li").length;
+
+
+                                            function nt() {
+                                                $(".vs01").not(":animated").animate({
+                                                    "margin-left": -wd
+                                                }, 1000, function() {
+                                                    $(".vs01 > li").eq(0).appendTo($(".vs01"));
+                                                    $(".vs01").css("margin-left", "0px");
+                                                });
                                             }
-                                            
-                                            
+                                            var it = setInterval(function() {
+                                                nt();
+                                            }, 4000);
+
+                                            function pv() {
+                                                $(".vs01").css("margin-left", -wd);
+                                                $(".vs01 li").eq(cn - 1).prependTo($(".vs01"));
+                                                $(".vs01").not(":animated").animate({
+                                                    "margin-left": "0px"
+                                                }, 1000);
+                                            }
+
+
+                                            $(".btn01 li").click(function() {
+                                                var data_f = $(this).attr("data_f");
+
+                                                if (data_f == "nt") {
+                                                    clearInterval(it);
+                                                    nt();
+                                                    setInterval(function() {
+                                                        nt();
+                                                    }, 4000);
+                                                } else if (data_f == "pv") {
+                                                    clearInterval(it);
+                                                    pv();
+                                                    setInterval(function() {
+                                                        nt();
+                                                    }, 4000);
+
+                                                } else if (data_f == "sto") {
+                                                    $(".vs01").stop();
+                                                }
+
+
+                                            });
+
+
+
+
                                         });
-                                        
-                                        
-                                        
-                                        
-                                    });
-                                    
                                     </script>
                                 </li>
                                 <li class="ban clr">
@@ -333,62 +353,71 @@
                                     </figure>
                                 </li>
                             </ul>
-                                   <script>
-                                    $(document).ready(function(){
-                                       var wdt = $(".vs02 > li").width();
-                                        var cnt = $(".vs02 > li").length;
-                                    
-                                       
-                                        function ntx(){
-                                                $(".vs02").not(":animated").animate({"margin-left":-wdt},1000,function(){
-                                                $(".vs02 > li").eq(0).appendTo($(".vs02"));
-                                                $(".vs02").css("margin-left","0px");
-                                            });
-                                        }
-                                        var itvl = setInterval(function(){ ntx(); },4000);
-                                        
-                                        function pve(){
-                                            $(".vs02").css("margin-left",-wdt);
-                                            $(".vs02 li").eq(cnt-1).prependTo($(".vs02"));
-                                            $(".vs02").not(":animated").animate({"margin-left":"0px"},1000);
-                                        }
-                                        
-                                        
-                                        $(".btn02 li").click(function(){
-                                            var data_e = $(this).attr("data_e");
-                                            
-                                            if( data_e == "ntx"){
-                                                clearInterval(itvl);
-                                                ntx();
-                                                setInterval(function(){ nt(); },4000);
-                                            }else if( data_e =="pve"){
-                                                clearInterval(itvl);
-                                                pve();
-                                                setInterval(function(){ nt(); },4000);
-                                                
-                                            }else if( data_e == "stp"){
-                                                 $(".vs02").stop();
-                                            }
-                                            
-                                            
+                            <script>
+                                $(document).ready(function() {
+                                    var wdt = $(".vs02 > li").width();
+                                    var cnt = $(".vs02 > li").length;
+
+
+                                    function ntx() {
+                                        $(".vs02").not(":animated").animate({
+                                            "margin-left": -wdt
+                                        }, 1000, function() {
+                                            $(".vs02 > li").eq(0).appendTo($(".vs02"));
+                                            $(".vs02").css("margin-left", "0px");
                                         });
-                                        
-                                        
-                                        
-                                        
+                                    }
+                                    var itvl = setInterval(function() {
+                                        ntx();
+                                    }, 4000);
+
+                                    function pve() {
+                                        $(".vs02").css("margin-left", -wdt);
+                                        $(".vs02 li").eq(cnt - 1).prependTo($(".vs02"));
+                                        $(".vs02").not(":animated").animate({
+                                            "margin-left": "0px"
+                                        }, 1000);
+                                    }
+
+
+                                    $(".btn02 li").click(function() {
+                                        var data_e = $(this).attr("data_e");
+
+                                        if (data_e == "ntx") {
+                                            clearInterval(itvl);
+                                            ntx();
+                                            setInterval(function() {
+                                                nt();
+                                            }, 4000);
+                                        } else if (data_e == "pve") {
+                                            clearInterval(itvl);
+                                            pve();
+                                            setInterval(function() {
+                                                nt();
+                                            }, 4000);
+
+                                        } else if (data_e == "stp") {
+                                            $(".vs02").stop();
+                                        }
+
+
                                     });
-                                    
-                                    </script>
+
+
+
+
+                                });
+                            </script>
                         </div>
-                         <script>
-                        //탭 설정하기 1.버튼을 클리한다. 2. ban_box가 li클릭시 각각 나타나야한다.
-                        $(".ban_tap li").click(function(){
-                            var idx = $(this).index();
-                            $(this).addClass("on");
-                            $(this).siblings().removeClass("on");
-                            $(".ban_con li.ban").eq(idx).addClass("on");
-                            $(".ban_con li.ban").eq(idx).siblings().removeClass("on");
-                        });
+                        <script>
+                            //탭 설정하기 1.버튼을 클리한다. 2. ban_box가 li클릭시 각각 나타나야한다. 3. 인덱스를 적용할 때 버튼과 같은 순서를 설정해줘야함 하나의 그룹으로 만들어서 인덱스 순서를 같게 만들어 준다. 
+                            $(".ban_tap li").click(function() {
+                                var idx = $(this).index();
+                                $(this).addClass("on");
+                                $(this).siblings().removeClass("on");
+                                $(".ban_con li.ban").eq(idx).addClass("on");
+                                $(".ban_con li.ban").eq(idx).siblings().removeClass("on");
+                            });
                         </script>
                     </div>
                     <div class="right">
@@ -737,49 +766,59 @@
                         </ul>
                     </div>
                     <ul class="ft_btn clr">
-                        <li><button data_type ="pr">이전</button></li>
-                        <li><button data_type ="st">정지</button></li>
-                        <li><button data_type ="nx">다음</button></li>
+                        <li><button data_type="pr">이전</button></li>
+                        <li><button data_type="st">정지</button></li>
+                        <li><button data_type="nx">다음</button></li>
                     </ul>
                     <script>
-                    $(document).ready(function(){
-                        var wd = $(".bn_lst li").width();
-                        
-                        function pr(){
-                            $(".bn_lst").not(":animated").animate({"margin-left":-wd},800,function(){
-                                $(".bn_lst li").eq(0).appendTo($(".bn_lst"));
-                                $(".bn_lst").css("margin-left","0px");
+                        $(document).ready(function() {
+                            var wd = $(".bn_lst li").width();
+
+                            function pr() {
+                                $(".bn_lst").not(":animated").animate({
+                                    "margin-left": -wd
+                                }, 800, function() {
+                                    $(".bn_lst li").eq(0).appendTo($(".bn_lst"));
+                                    $(".bn_lst").css("margin-left", "0px");
+                                });
+                            }
+                            var itv = setInterval(function() {
+                                pr();
+                            }, 5000);
+
+                            function nx() {
+                                $(".bn_lst").css("margin-left", -wd);
+                                $(".bn_lst li").eq(9).prependTo($(".bn_lst"));
+                                $(".bn_lst").not(":animated").animate({
+                                    "margin-left": "0px"
+                                });
+                            }
+
+                            $(".ft_btn li button").click(function() {
+                                //1.사용자데이터 속성값 가져오기 
+                                var dtt = $(this).attr("data_type"); // this라고 해줘야 멈추기 됨
+
+                                if (dtt == "pr") {
+                                    clearInterval(itv);
+                                    pr();
+                                    setInterval(function() {
+                                        pr();
+                                    }, 5000);
+
+                                } else if (dtt == "nx") {
+                                    clearInterval(itv);
+                                    nx();
+                                    setInterval(function() {
+                                        pr();
+                                    }, 5000);
+                                } else if (dtt == "st") {
+                                    clearInterval(itv);
+                                    $(".bn_lst").stop();
+                                }
+
                             });
-                        }
-                        var itv = setInterval(function(){pr();},5000);
-                        
-                        function nx(){
-                            $(".bn_lst").css("margin-left",-wd);
-                            $(".bn_lst li").eq(9).prependTo($(".bn_lst"));
-                            $(".bn_lst").not(":animated").animate({"margin-left":"0px"});  
-                        }
-                       
-                        $(".ft_btn li button").click(function(){
-                           //1.사용자데이터 속성값 가져오기 
-                            var dtt = $(this).attr("data_type"); // this라고 해줘야 멈추기 됨
-                           
-                           if ( dtt == "pr"){
-                               clearInterval(itv);
-                               pr();
-                               setInterval(function(){pr();},5000);
-                               
-                           }else if ( dtt == "nx"){
-                               clearInterval(itv);
-                               nx();
-                               setInterval(function(){pr();},5000);
-                           }else if( dtt == "st"){
-                               clearInterval(itv);
-                               $(".bn_lst").stop();   
-                           }
-                              
+
                         });
-                        
-                    });
                     </script>
                 </div>
                 <nav class="fnb clr">
@@ -790,7 +829,7 @@
                         <li class="f_lt"><a href="">뷰어다운로드</a></li>
                         <li class="f_lt"><a href="">배너광장</a></li>
                         <li class="f_lt"><a href="">찾아오시는 길</a></li>
-                         <li class="f_lt"><a href="">저작권 정책</a></li>
+                        <li class="f_lt"><a href="">저작권 정책</a></li>
                     </ul>
                 </nav>
                 <section class="tel">
@@ -798,11 +837,11 @@
                     <p class="com"><span class="tell_ic">전화</span>031-120</p>
                 </section>
                 <section class="ct">
-                   <h2 class="hide">숨김</h2>
+                    <h2 class="hide">숨김</h2>
                     <p class="add"><span class="blue">경기도청&nbsp;</span>16444 수원시 팔달구 효원로 1 (매산로3가)</p>
                     <p class="add"><span class="blue">북부청사&nbsp;</span>11780 의정부청사로 1</p>
                     <p class="copy">ⓒ GYEONGGI PROVINCE All Rights Reserved. </p>
-                     <a href="" class="mark">wa</a>
+                    <a href="" class="mark">wa</a>
                 </section>
             </div>
         </footer>
